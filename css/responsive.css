@@ -1,0 +1,396 @@
+@media only screen and (min-width: 992px) {
+
+    #home {
+        width: 100%;
+        height: 100%;
+    }
+
+    #home .container,
+    #home .container .row,
+    #home .container .row div {
+        height: 100%;
+    }
+    .welcome-img {
+        height: 100%;
+    }
+
+
+    .hero-display {
+        display: table;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    .hero-display-mdl {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .table-top {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .table-btm {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+
+    #home .bttn {
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    #mobile-menu {
+        display: block;
+        background-color: none;
+    }
+    #nav {
+        display: none;
+    }
+    .md-txtright-sm-txtcenter,
+    .md-txtleft-sm-txtcenter {
+        text-align: center;
+    }
+    .flex {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    #home .container,
+    #home .container .row,
+    #home .container .row div,
+    .hero-display {
+        height: 400px;
+    }
+
+    .hero-display {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+
+    .welcome-img {
+        height: 850px;
+    }
+
+    .main-slide {
+        width: 100%;
+        height: 400px;
+    }
+
+
+    #map {
+        height: 400px;
+    }
+}
+
+
+@media only screen and (min-width: 641px) and (max-width: 999px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 641px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 801px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 641px) and (max-width: 800px) {}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+
+    #fun-fact .counter {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #price .price-box {
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 641px) and (max-width: 767px) {
+    .text-80 {
+        font-size: 70px;
+        line-height: 100px;
+    }
+    .text-70 {
+        font-size: 60px;
+        line-height: 90px;
+    }
+    .text-60 {
+        font-size: 50px;
+        line-height: 75px;
+    }
+    .text-50 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .text-40 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+    .text-80 {
+        font-size: 65px;
+        line-height: 90px;
+    }
+    .text-70 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+    .text-60 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+    .text-50 {
+        font-size: 36px;
+        line-height: 55px;
+    }
+    .text-40 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .m-frm {
+        width: 300px;
+    }
+
+    .m-frm:focus {
+        width: 300px;
+    }
+
+}
+
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+
+    .et-ico {
+        font-size: 36px;
+    }
+    #fun-fact .counter {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .social-nav li a {
+        color: white;
+        font-size: 18px;
+        padding: 25px 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #home .container,
+    #home .container .row,
+    #home .container .row div,
+    .hero-display {
+        height: 450px;
+    }
+
+    .hero-display {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+
+    .welcome-img {
+        height: 950px;
+    }
+
+    .main-slide {
+        width: 100%;
+        height: 450px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+
+    h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 30px
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 25px
+    }
+    h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    h6 {
+        font-size: 13px;
+        line-height: 20px
+    }
+
+    .text-80 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .text-70 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .text-60 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .text-50 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .text-40 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    #header img {
+        height: 30px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: 10px;
+    }
+    #header.sticky img {
+        height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+    #header a h2 {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 25px 0;
+    }
+    #header.sticky a h2 {
+        line-height: 30px;
+        padding: 20px 0;
+    }
+
+    .btn-wht-big,
+    .btn-wht-big-line,
+    .btn-blk-big,
+    .btn-green-line-big,
+    .btn-green-big {
+        width: auto;
+        font-size: 15px;
+    }
+
+
+    .ico {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background-size: contain;
+        margin: 15px 0;
+        opacity: 0.7;
+    }
+
+    .m-frm {
+        width: 200px;
+    }
+
+    .m-frm:focus {
+        width: 200px;
+    }
+
+    .partner {
+        width: 150px;
+        height: 100px;
+    }
+    #contact-no a, 
+    #contact-no p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #price .price-box .price-title {
+        width: 200px;
+    }
+    #price .price-box .price-title span {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+
+    .et-ico {
+        font-size: 30px;
+    }
+
+    #download .counter {
+        font-size: 36px;
+    }
+
+    #fun-fact .counter {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .m-frm {
+        width: 150px;
+    }
+
+    .m-frm:focus {
+        width: 150px;
+    }
+
+    .m-btn-red,
+    .m-btn-aqua {
+        display: inline-block;
+        padding: 10px 10px;
+        height: 50px;
+    }
+
+    #price .price-box .price-title {
+        width: 170px;
+    }
+    #price .price-box p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .social-nav li a {
+        color: white;
+        font-size: 16px;
+        padding: 20px 5px;
+    }
+    .partner {
+        width: 120px;
+        height: 80px;
+        padding: 0 5px;
+    }
+    .contact-info .col-1 {
+        padding-left: 0;
+    }
+}
