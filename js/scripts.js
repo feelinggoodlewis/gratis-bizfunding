@@ -169,7 +169,7 @@
       if (toFinance === '') {
          return displayError('To be finance is required');
       }
-      if (isNaN(toFinance.substr(1).trim())) {
+      if (isNaN(toFinance.trim().replace(/[\$\,]/g, ''))) {
          return displayError('To be finance should be monetary value');
       }
       if (annualRef === '') {
