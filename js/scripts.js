@@ -92,7 +92,7 @@
       var lastName = $('#last_name').val()
       var email = $('#email').val()
       var companyName = $('#company_name').val()
-      var mobile = $('#mobile').val()
+      var mobile = $('#phone').val()
       var checkbox = $('#gsheet1_checkbox').prop('checked')
 
       if (annualRef === '') {
