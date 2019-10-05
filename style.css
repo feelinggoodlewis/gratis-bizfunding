@@ -1455,7 +1455,15 @@ ul {
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #4CAF50;
+   background: coral;
+   cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background: coral;
    cursor: pointer;
 }
 
