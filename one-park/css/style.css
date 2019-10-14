@@ -16,6 +16,12 @@ p {
    font-weight: 600;
 }
 
+.btn-action {
+   position: absolute;
+   height: 50px;
+   bottom: 0;
+}
+
 ul,
 li {
    list-style: none;
@@ -69,6 +75,7 @@ footer {
    background-size: contain;
    background-repeat: no-repeat;
    min-height: 270px;
+   position: relative;
 }
 
 .action-line {
@@ -117,7 +124,7 @@ footer ul.links li a {
 
 .badgets li img,
 .badgets li svg {
-   width: 110px;
+   width: 90px;
    margin-right: 5px;
    vertical-align: super;
 }
