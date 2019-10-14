@@ -734,6 +734,12 @@ h6 {
    transition: 0.5s ease;
 }
 
+ul {
+   list-style: none outside none;
+   padding-left: 0;
+   margin: 0;
+}
+
 #nav li a ul {
    display: none;
 }
@@ -1340,6 +1346,14 @@ ul {
    color: #eee
 }
 
+.text-blk {
+   color: #000;
+}
+
+.text-offwht {
+   color: #666;
+}
+
 .btn-quote {
    padding: 10px 80px;
    background: coral;
@@ -1568,6 +1582,46 @@ footer a {
    width: 200px !important
 }
 
+
+
+/* ================= Blog CSS =================== */
+.blog-intro {
+   font-size: 30px;
+   text-transform: capitalize;
+   line-height: 1.5;
+}
+
+.blog-main {
+   padding: 2rem 4rem;
+}
+
+.blog-link {
+   text-decoration: underline;
+   font-weight: bold;
+   cursor: pointer;
+   color: blue;
+
+}
+
+.action-main {
+   background: url('images/blog/footer-imag.jpg') no-repeat center center /cover;
+   min-height: 270px;
+}
+
+.action-line {
+   background: #eee9;
+   height: 100%;
+   width: 50%;
+   line-height: 2.2;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+
+
+
+/* ============= Blog CSS ends =================== */
+
 @media (min-width: 1200px) {
    .container-main {
       max-width: 1300px;
@@ -1622,6 +1676,27 @@ footer a {
 
    .card-box {
       padding: 2px 8px !important
+   }
+
+   .blog-main {
+      padding: 2rem 1rem !important;
+   }
+
+   .action-line {
+      width: 100% !important;
+   }
+
+   .action-main {
+      min-height: auto !important;
+   }
+
+   .blog-main p {
+      font-size: 16px !important;
+   }
+
+   p.blog-intro {
+      text-align: center;
+      font-size: 25px !important;
    }
 }
 
@@ -1678,59 +1753,4 @@ footer a {
    #mobile-menu {
       display: block
    }
-}
-
-ul {
-   list-style: none outside none;
-   padding-left: 0;
-   margin: 0;
-}
-
-.demo .item {
-   margin-bottom: 60px;
-   overflow: hidden
-}
-
-.content-slider li {
-   background-color: rgb(248, 248, 248);
-   text-align: left;
-   line-height: 1.5;
-   padding: 5px 20px;
-   color: #000;
-   font-size: 14px;
-   height: 210px;
-   overflow: hidden;
-   min-width: 305px;
-}
-
-.theader {
-   color: #000;
-   font-weight: bold;
-   margin-bottom: 0
-}
-
-.lSAction>a {
-   display: none !important
-}
-
-.lSSlideOuter .lSPager.lSpg>li:hover a,
-.lSSlideOuter .lSPager.lSpg>li.active a {
-   background-color: #18507f !important;
-}
-
-.tpoint span {
-   float: right;
-   color: gray;
-   font-size: 13px;
-}
-
-.tname {
-   color: gray;
-   font-size: 12px;
-   position: absolute;
-   bottom: -10px
-}
-
-.tpoint {
-   margin-bottom: 10px
 }
