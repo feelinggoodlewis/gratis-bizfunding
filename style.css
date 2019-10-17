@@ -1617,10 +1617,35 @@ footer a {
    padding-right: 15px;
 }
 
+.blog-quote {
+   /* color: blue; */
+   font-style: oblique;
+   padding: 10px;
+}
 
+.blog-highlight {
+   background: #fef5c4;
+   border: 1px solid #fadf98;
+   padding: 10px;
+}
 
+.blog-ul {
+   margin: auto;
+   list-style: initial;
+   padding-left: inherit;
+   line-height: 2;
+   color: black;
+   font-size: 18px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.blog-ul li {
+   margin-bottom: .8rem;
+}
 
 /* ============= Blog CSS ends =================== */
+
+
 
 @media (min-width: 1200px) {
    .container-main {
