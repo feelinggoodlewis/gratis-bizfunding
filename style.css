@@ -1715,9 +1715,9 @@ footer a {
       min-height: auto !important;
    }
 
-   .blog-main p {
+   /* .blog-main p {
       font-size: 16px !important;
-   }
+   } */
 
    p.blog-intro {
       text-align: center;
