@@ -225,9 +225,9 @@
    <script>
       $(document).ready(() => {
          $('.disable_iscroll').on('click', () => {
-            $('html, body').animate({ scrollTop: $('iframe').offset().top - 100 }, 400)
             $('iframe').removeClass('d-none')
             $('.btn-danger').addClass('d-none')
+            $('html, body').animate({ scrollTop: $('iframe').offset().top - 100 }, 400)
             setTimeout(() => {
                $('iframe').contents().find('section').addClass('d-none')
                $('iframe').contents().find('footer').addClass('d-none')
