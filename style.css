@@ -1654,6 +1654,23 @@ footer a {
    margin-bottom: .8rem;
 }
 
+.iframe_div {
+   /* border: 2px solid #D5CC5A; */
+   height: 500px;
+   text-align: center;
+   overflow: hidden;
+   margin: 15px auto;
+   max-width: 100%;
+
+}
+
+.iframe_data {
+   border: 0px none;
+   height: 1400px;
+   margin-top: -435px;
+   width: 650px;
+}
+
 /* ============= Blog CSS ends =================== */
 
 
@@ -1665,6 +1682,16 @@ footer a {
 }
 
 @media(max-width: 991px) {
+
+   .iframe_div {
+      height: 660px;
+   }
+
+   .iframe_data {
+      min-height: 1400px;
+      margin-top: -135px;
+      width: 100%;
+   }
 
    #home .container .row div {
       height: initial !important
@@ -1709,6 +1736,13 @@ footer a {
 }
 
 @media(max-width: 768px) {
+   .iframe_data {
+      height: -435px;
+   }
+
+   .iframe_div {
+      height: 450px;
+   }
 
    .card-box {
       padding: 2px 8px !important
@@ -1740,6 +1774,16 @@ footer a {
    }
 }
 
+@media(max-width:767px) {
+   .iframe_div {
+      height: 660px;
+   }
+
+   .iframe_data {
+      margin-top: -326px;
+   }
+}
+
 
 @media(max-width:660px) {
    .breadcrumb {
@@ -1751,6 +1795,10 @@ footer a {
       display: inline-block;
       width: 48%;
       margin-bottom: 1rem;
+   }
+
+   .iframe_data {
+      margin-top: -260px;
    }
 }
 
