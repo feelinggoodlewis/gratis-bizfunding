@@ -9,6 +9,7 @@
    <link rel="shortcut icon" href="images/favico/favico.jpg" />
    <link href="css/bootstrap.min.css" rel="stylesheet" />
    <link href="style.css" rel="stylesheet" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    <style>
       body {
          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -98,7 +99,9 @@
             <p class="mt-2 blog-highlight">
                That’s right! You’re just seconds away of getting pre-qualified for that loan your business needs
                so
-               much! <span class="blog-link" onclick="location='index.html'">Click To Get Loan Now!</span>
+               much! <a href="index.html#form-cap" target="load_iframe"><span class="blog-link disable_iscroll">Click To
+                     Get Loan
+                     Now!</span></a>
             </p>
             <ul class="blog-ul">
                <li>Get pre-qualified in <strong>SECONDS</strong> by only completing a small survey with basic
@@ -125,8 +128,9 @@
                <p class="mt-2 blog-highlight">
                   It doesn’t matter if you’ve been rejected by other banks in the past or if you don’t have an amazing
                   credit score because we give more credit to your business cash flow. much! <br />
-                  <span class="blog-link" onclick="location='index.html'">Click To Get
-                     Loan Now!</span>
+                  <a href="index.html#form-cap" target="load_iframe">
+                     <span class="blog-link disable_iscroll">Click To Get
+                        Loan Now!</span></a>
                </p>
                <p>
                   Find with us the best business loans and other funding alternatives. Forget about the excessive
@@ -165,11 +169,16 @@
                Does it seem too good to be true? Well, if you are here it’s because this is the type of business loan
                program you need so, why not giving it a try? <strong>You’re a few clicks away from solving your business
                   problems
-                  <button class="btn btn-danger text-uppercase py-4 mt-2" onclick="location='index.html'">Check to
-                     see
-                     how much your business can
-                     get!</button>
+                  <a href="index.html#form-cap" target="load_iframe" class="disable_iscroll">
+                     <button class="btn btn-danger text-uppercase py-4 mt-2">Check to
+                        see
+                        how much your business can
+                        get!</button></a>
             </p>
+            <div>
+               <iframe class="d-none" src="" scrolling="on" frameborder="0" height="400px" name="load_iframe"
+                  width="100%"></iframe>
+            </div>
          </div>
       </section>
    </main>
@@ -210,6 +219,19 @@
          </div>
       </div>
    </footer>
+   <script>
+      $(document).ready(() => {
+         $('.disable_iscroll').on('click', () => {
+            $('html, body').animate({ scrollTop: $('iframe').offset().top - 100 }, 400)
+            $('iframe').removeClass('d-none')
+            setTimeout(() => {
+               $('iframe').contents().find('section').addClass('d-none')
+               $('iframe').contents().find('footer').addClass('d-none')
+               $('iframe').contents().find('.biz-section').removeClass('d-none')
+            }, 1000)
+         })
+      })
+   </script>
 </body>
 
 </html>

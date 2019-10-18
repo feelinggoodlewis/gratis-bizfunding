@@ -1584,7 +1584,7 @@ footer a {
 
 
 
-/* ================= Blog CSS =================== */
+/* ===================================================== Blog CSS =================== */
 .blog-intro {
    font-size: 30px;
    text-transform: capitalize;
@@ -1600,6 +1600,8 @@ footer a {
    font-weight: bold;
    cursor: pointer;
    color: blue;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 16px;
 
 }
 
