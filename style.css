@@ -1605,6 +1605,15 @@ footer a {
 
 }
 
+.blog-link1 {
+   text-decoration: underline;
+   cursor: pointer;
+   color: blue;
+   text-transform: capitalize;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 30px;
+}
+
 .action-main {
    background: url('images/blog/footer-imag.jpg') no-repeat center center /cover;
    min-height: 270px;
@@ -1723,6 +1732,10 @@ footer a {
 
    p.blog-intro {
       text-align: center;
+      font-size: 25px !important;
+   }
+
+   .blog-link1 {
       font-size: 25px !important;
    }
 }
