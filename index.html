@@ -27,48 +27,32 @@
    <link rel="stylesheet" href="css/responsive.css" />
    <link rel="stylesheet" href="style.css" />
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-
-
-   <!-- Facebook Pixel Code -->
-   <script>
-      !function (f, b, e, v, n, t, s) {
-         if (f.fbq) return; n = f.fbq = function () {
-            n.callMethod ?
-               n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-         };
-         if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-         n.queue = []; t = b.createElement(e); t.async = !0;
-         t.src = v; s = b.getElementsByTagName(e)[0];
-         s.parentNode.insertBefore(t, s)
-      }(window, document, 'script',
-         'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '553205112151136');
-      fbq('track', 'PageView');
-   </script>
-   <noscript>
-      <img height="1" width="1" src="https://www.facebook.com/tr?id=553205112151136&ev=PageView
-   &noscript=1" />
-   </noscript>
-   <!-- End Facebook Pixel Code -->
-
-
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126445142-9"></script>
-   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'UA-126445142-9');
-   </script>
-
    <!-- TrustBox script -->
    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
    <!-- End TrustBox script -->
-   <!-- ======================================Google Analytics Stops ===================== -->
+   <!-- DO NOT COPY THIS CODE-->
+   <script>
+      dataLayer = [];
+   </script>
+   <!-- Google Tag Manager -->
+   <!-- =============DO NOT COPY THIS CODE ============= -->
+   <script>(function (w, d, s, l, i) {
+         w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+               new Date().getTime(), event: 'gtm.js'
+         }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W7JCVB3');</script>
+   <!-- End Google Tag Manager -->
 </head>
 
 <body class="lit-bg">
+   <!-- Google Tag Manager (noscript) -->
+   <!-- ==========AGAIN DO NOT COPY THIS CODE==================== -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7JCVB3" height="0" width="0"
+         style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->
    <!--======================Header Start======================-->
    <header class="header-area-lit d-none" id="header">
       <div class="container-fluid">
@@ -186,10 +170,12 @@
                                     <h5 class="text-white">for 60 months</h5>
                                  </h3>
                               </div>
-                              <button type="button" class="btn mt-1 text-white" id="free_quote_btn"
-                                 style="width: 100%; background: coral">
-                                 FREE QUOTE
-                              </button>
+                              <a href="#" style="font-family: 'Open-Sans', sans-serif;" id="get_free_qut">
+                                 <button type="button" class="btn mt-1 text-white" id="free_quote_btn"
+                                    style="width: 100%; background: coral">
+                                    FREE QUOTE
+                                 </button>
+                              </a>
                            </div>
                         </form>
                      </div>
@@ -530,7 +516,6 @@
          </div>
       </section>
       <section>
-
          <div class="text-center mt-2 animatedParent">
             <h3 class="blue-color animated fadeInUpShort" style="font-weight: bold; padding: 0px 8px">
                WHAT SEPARATES US FROM OTHER
@@ -539,9 +524,7 @@
                FINANCIAL SOLUTION PROVIDERS
             </h1>
          </div>
-
          <!-- ====================== Card Of What -->
-
          <div class="card-box card-box2 animatedParent">
             <div class="_card _card2 animated fadeInUpShort">
                <div>
@@ -685,7 +668,10 @@
       <section>
          <div class="quote">
             <h1 class="text-white text-center">NEED A FAST<strong> BUSINESS LOAN?</strong></h1>
-            <p class="text-center mt-2"> <button class="btn btn-quote" id="get_free_qut">Get a free quote</button>
+            <p class="text-center mt-2">
+               <a href="#" style="font-family: 'Open-Sans', sans-serif;" id="get_free_qut">
+                  <button class="btn btn-quote">Get a free quote</button>
+               </a>
             </p>
          </div>
 
@@ -754,8 +740,8 @@
       <!-- <script src="js/map-style-lit.js"></script> -->
 
       <!-- google map - insert_your_api -->
-      <script async defer
-         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBksbuUixB8KCNG9ljZBsDV7d0u0PU2AEc&callback=initMap"></script>
+      <!-- <script async defer -->
+      <!-- src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBksbuUixB8KCNG9ljZBsDV7d0u0PU2AEc&callback=initMap"></script> -->
 </body>
 
 </html>

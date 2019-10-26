@@ -25,7 +25,6 @@
       $('#free_qut_section').removeClass('d-none')
       $('#main_section').addClass('d-none')
       $('html, body').animate({ scrollTop: $("#free_qut_section").offset().top - 100 })
-      fbq('track', 'ViewContent');
    })
 
    $('#get_free_qut').on('click', (e) => {
@@ -33,8 +32,6 @@
       $('#free_qut_section').removeClass('d-none')
       $('#main_section').addClass('d-none')
       $('html, body').animate({ scrollTop: $("#free_qut_section").offset().top - 100 })
-      fbq('track', 'ViewContent');
-
    })
 
    var slider = document.getElementById("myRange");
@@ -146,7 +143,7 @@
          .then(response => {
             $('.main-container').html(appreciate)
             $('html,body').animate({ scrollTop: $('#thanks_for').offset().top - 100 });
-            fbq('track', 'Registration');
+            dataLayer.push({ 'event': 'CompleteRegistration' });
          })
          .catch(error => {
             return displayError('Sorry your request could not be submitted, try again');
@@ -217,7 +214,7 @@
          .then(response => {
             $('.main-container').html(appreciate)
             $('html,body').animate({ scrollTop: $('#thanks_for').offset().top - 100 });
-            fbq('track', 'Registration');
+            dataLayer.push({ 'event': 'CompleteRegistration' });
          })
          .catch(error => {
             return displayError('Sorry your request could not be submitted, try again');

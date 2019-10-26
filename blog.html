@@ -46,9 +46,29 @@
          }
       }
    </style>
+   <!-- DO NOT COPY THIS CODE-->
+   <script>
+      dataLayer = [];
+   </script>
+   <!-- Google Tag Manager -->
+   <!-- =============DO NOT COPY THIS CODE ============= -->
+   <script>(function (w, d, s, l, i) {
+         w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+               new Date().getTime(), event: 'gtm.js'
+         }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W7JCVB3');</script>
+   <!-- End Google Tag Manager -->
 </head>
 
 <body style="background: #ccc;">
+   <!-- Google Tag Manager (noscript) -->
+   <!-- ==========AGAIN DO NOT COPY THIS CODE==================== -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7JCVB3" height="0" width="0"
+         style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->
    <header>
       <div class="bg-blk">
          <div class="container">
@@ -70,7 +90,7 @@
             <p class="blog-intro">
                Get that immediate help your business needs: Fast Business Loan for small or medium-sized business.
                <br />
-               <a href="index.html#form-cap" target="load_iframe"><span class="blog-link1 disable_iscroll">Check if You
+               <a href="#" class="disable_iscroll"><span class="blog-link1">Check if You
                      Qualify In 60 Seconds</span></a>
                <!-- <span class="blog-link1" onclick="location='index.html'">Check if You Qualify In 60 Seconds</span> -->
             </p>
@@ -102,7 +122,7 @@
             <p class="mt-2 blog-highlight">
                That’s right! You’re just seconds away of getting pre-qualified for that loan your business needs
                so
-               much! <a href="index.html#form-cap" target="load_iframe"><span class="blog-link disable_iscroll">Click To
+               much! <a href="#" class="disable_iscroll"><span class="blog-link">Click To
                      Get Loan
                      Now!</span></a>
             </p>
@@ -131,8 +151,8 @@
                <p class="mt-2 blog-highlight">
                   It doesn’t matter if you’ve been rejected by other banks in the past or if you don’t have an amazing
                   credit score because we give more credit to your business cash flow. much! <br />
-                  <a href="index.html#form-cap" target="load_iframe">
-                     <span class="blog-link disable_iscroll">Click To Get
+                  <a href="#" class="disable_iscroll">
+                     <span class="blog-link">Click To Get
                         Loan Now!</span></a>
                </p>
                <p>
@@ -172,16 +192,121 @@
                Does it seem too good to be true? Well, if you are here it’s because this is the type of business loan
                program you need so, why not giving it a try? <strong>You’re a few clicks away from solving your business
                   problems
-                  <a href="index.html#form-cap" target="load_iframe" class="disable_iscroll">
+                  <a href="#" class="disable_iscroll">
                      <button class="btn btn-danger text-uppercase py-4 mt-2">Check to
                         see
                         how much your business can
-                        get!</button></a>
+                        get!</button>
+                  </a>
             </p>
-            <div>
-               <iframe class="d-none" src="" scrolling="on" frameborder="0" height="400px" name="load_iframe"
-                  width="100%"></iframe>
-            </div>
+            <section class="biz-section d-none">
+               <div class="business-tab" id="business-tab">
+                  <div class="form-tab" style="width:100%">
+                     <div class="form-cap" id="form-cap">
+                        <p class="text-white">How Much Money Your Business Can Get?</p>
+                     </div>
+                     <form name="free_gsheet_1">
+                        <p class="text-center error"></p>
+                        <div>
+                           <select class="form-control" id="annual_revenue" name="annual_salary">
+                              <option value="">
+                                 Select Annual Revenue
+                              </option>
+                              <option>
+                                 Less than 200K
+                              </option>
+                              <option>
+                                 $200K - $500K
+                              </option>
+                              <option>
+                                 $500K - $850K
+                              </option>
+                              <option>
+                                 $850K - $2M
+                              </option>
+                              <option>
+                                 >2M
+                              </option>
+                           </select>
+                           <select class="form-control" id="credit_score" name="credit_score">
+                              <option value="">Select Credit Score</option>
+                              <option>
+                                 Below 575
+                              </option>
+                              <option>
+                                 575 - 624
+                              </option>
+                              <option>
+                                 650 - 699
+                              </option>
+                              <option>
+                                 700 - 734
+                              </option>
+                              <option>
+                                 735+
+                              </option>
+                           </select>
+                        </div>
+                        <div>
+                           <select class="form-control" name="business_years" id="business_years">
+                              <option value="">
+                                 Years In Business
+                              </option>
+                              <option>
+                                 1 - 2 Years
+                              </option>
+                              <option>
+                                 3 - 4 Years
+                              </option>
+                              <option>
+                                 4 - 5 Years
+                              </option>
+                              <option>
+                                 6 - 7 Years
+                              </option>
+                              <option>
+                                 8 - 9 Years
+                              </option>
+                              <option>
+                                 9 - 10 Years
+                              </option>
+                              <option>
+                                 10+ Years
+                              </option>
+                           </select>
+                           <input class="form-control" type="text" name="first_name" id="first_name"
+                              placeholder="First Name" autocomplete="given-name" />
+                        </div>
+                        <div>
+                           <input class="form-control" type="text" name="last_name" id="last_name"
+                              autocomplete="family-name" placeholder="Last Name" />
+                           <input class="form-control" type="email" name="email" id="email" autocomplete="email"
+                              placeholder="Email" />
+                        </div>
+                        <div>
+                           <input class="form-control" type="text" name="company_name" id="company_name"
+                              autocomplete="work" placeholder="Company Name" />
+                           <input class="form-control" type="tel" maxlength="10" minlength="10" name="phone" id="phone"
+                              autocomplete="mobile" placeholder="Phone" />
+                        </div>
+                        <div class="mt-1">
+                           <label>
+                              <input type="checkbox" id="gsheet1_checkbox" />
+                              <span>I have read and accept the
+                                 <strong class="blue-color">Terms and Conditions</strong></span>
+                           </label>
+                        </div>
+                        <button class="btn mt-1 text-white py-2" type="submit" style="width:100%; background: coral"
+                           id="gsheet1_btn">
+                           Proceed
+                        </button>
+                        <div class="spinner d-none">
+                           <div class="spin"></div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </section>
          </div>
       </section>
    </main>
@@ -222,20 +347,7 @@
          </div>
       </div>
    </footer>
-   <script>
-      $(document).ready(() => {
-         $('.disable_iscroll').on('click', () => {
-            $('iframe').removeClass('d-none')
-            $('.btn-danger').addClass('d-none')
-            $('html, body').animate({ scrollTop: $('iframe').offset().top - 100 }, 400)
-            setTimeout(() => {
-               $('iframe').contents().find('section').addClass('d-none')
-               $('iframe').contents().find('footer').addClass('d-none')
-               $('iframe').contents().find('.biz-section').removeClass('d-none')
-            }, 4000)
-         })
-      })
-   </script>
+   <script src="js/blog_script.js"></script>
 </body>
 
 </html>
