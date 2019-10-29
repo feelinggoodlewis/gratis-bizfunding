@@ -59,25 +59,12 @@ footer {
    /* color: #eee */
 }
 
-.bg-gray {
-   background: #30302b;
-   /* color: #eee */
-}
-
 .text-center {
    text-align: center
 }
 
-.text-green {
-   color: #7dc049
-}
-
 .text-bold {
    font-weight: bold
-}
-
-.text-gray {
-   color: gray
 }
 
 .text-white {
@@ -177,22 +164,12 @@ footer {
       padding: 2rem .5rem !important;
    }
 
-   .btn-submit {
-      padding: 10px !important;
-      font-size: 90% !important;
-   }
-
-   .font-s {
-      font-size: 20px !important;
-   }
-
    body {
       font-size: 90% !important
    }
 
    h3 {
       font-size: 20px;
-      /* text-align: center */
    }
 
    h2 {
