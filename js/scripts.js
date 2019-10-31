@@ -80,7 +80,7 @@
       $('html, body').animate({ scrollTop: $('.error').offset().top - 100 })
    }
    // function to submit free quote to the server
-   $('#gsheet1_btn').on('click', (e) => {
+   $('#gsheet1_btn').on('click', async (e) => {
       e.preventDefault()
       var annualRef = $('#annual_revenue').val()
       var creditScore = $('#credit_score').val()
@@ -135,10 +135,16 @@
          return displayError('You have to accept the terms and conditions');
       }
       displayError('')
+
+      $('.spinner').removeClass('d-none')
+      // get the user IP address
+      let userIp = await $.getJSON('https://api.ipify.org?format=jsonp&callback=?')
+      $('input[name="ip_address"').val(userIp.ip)
+      // get all the form input
       const form1 = document.forms['free_gsheet_1']
 
-      const addr = 'https://script.google.com/macros/s/AKfycbx8yPqcjT4VDKbRWYx4Xj_gjPZRX6gvC2hSmVR_WuD4HLvbcVs/exec'
-      $('.spinner').removeClass('d-none')
+      // const addr = 'https://script.google.com/macros/s/AKfycbx8yPqcjT4VDKbRWYx4Xj_gjPZRX6gvC2hSmVR_WuD4HLvbcVs/exec'
+      const addr = 'https://script.google.com/macros/s/AKfycbwBtjlfYgurpJM2vlp4IyjH07FNc4vHtCs8jIeWQH8kLcprPIk/exec'
       fetch(addr, { method: 'POST', body: new FormData(form1) })
          .then(response => {
             $('.main-container').html(appreciate)
@@ -151,7 +157,7 @@
    })
 
    // function to submit free quote to the server
-   $('#gsheet2_btn').on('click', (e) => {
+   $('#gsheet2_btn').on('click', async (e) => {
       e.preventDefault()
       var toFinance = $('#to_finance').val()
       var annualRef = $('#annual_sale').val()
@@ -206,10 +212,15 @@
          return displayError('Invalid Email');
       }
       displayError('')
+      $('.spin').removeClass('d-none')
+      // get the user IP address
+      let userIp = await $.getJSON('https://api.ipify.org?format=jsonp&callback=?')
+      $('input[name="ip_address"').val(userIp.ip)
+      // get all the form input
       const form1 = document.forms['free_gsheet_2']
 
-      const addr = 'https://script.google.com/macros/s/AKfycbx8yPqcjT4VDKbRWYx4Xj_gjPZRX6gvC2hSmVR_WuD4HLvbcVs/exec'
-      $('.spin').removeClass('d-none')
+      // const addr = 'https://script.google.com/macros/s/AKfycbx8yPqcjT4VDKbRWYx4Xj_gjPZRX6gvC2hSmVR_WuD4HLvbcVs/exec'
+      const addr = 'https://script.google.com/macros/s/AKfycbwBtjlfYgurpJM2vlp4IyjH07FNc4vHtCs8jIeWQH8kLcprPIk/exec'
       fetch(addr, { method: 'POST', body: new FormData(form1) })
          .then(response => {
             $('.main-container').html(appreciate)

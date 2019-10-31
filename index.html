@@ -323,7 +323,7 @@
                   </div>
                   <div class="col-md-6">
                      <label for="mobil">Mobile</label><br>
-                     <input type="tel" name="phone" maxlength="10" minlength="10" class="form-control" id="mobil"
+                     <input type="tel" name="phone" maxlength="16" minlength="16" class="form-control" id="mobil"
                         autocomplete="mobile">
                   </div>
                   <div class="col-md-6">
@@ -333,6 +333,7 @@
                   <div class="col-12">
                      <label for="legal_name">Legal Buiness Name</label><br>
                      <input type="text" name="company_name" class="form-control" id="legal_name" autocomplete="work">
+                     <input type="hidden" name="ip_address">
                   </div>
                   <div class="col-12 text-right">
                      <div class="spin d-none" style="vertical-align: bottom; margin-right: 2rem;"></div>
@@ -493,8 +494,9 @@
                      <div>
                         <input class="form-control" type="text" name="company_name" id="company_name"
                            autocomplete="work" placeholder="Company Name" />
-                        <input class="form-control" type="tel" maxlength="10" minlength="10" name="phone" id="phone"
+                        <input class="form-control" type="tel" maxlength="16" minlength="16" name="phone" id="phone"
                            autocomplete="mobile" placeholder="Phone" />
+                        <input type="hidden" name="ip_address">
                      </div>
                      <div class="mt-1">
                         <label>
