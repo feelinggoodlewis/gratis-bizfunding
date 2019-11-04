@@ -1739,7 +1739,7 @@ footer a {
    }
 
    .biz-pad {
-      padding: 10px;
+      padding: 10px !important;
    }
 
    .biz-pad form div {
@@ -1751,7 +1751,7 @@ footer a {
    }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
    .iframe_data {
       height: -435px;
    }
@@ -1788,9 +1788,7 @@ footer a {
    .blog-link1 {
       font-size: 25px !important;
    }
-}
 
-@media(max-width:767px) {
    .iframe_div {
       height: 660px;
    }
@@ -1821,6 +1819,10 @@ footer a {
 @media(max-width:630px) {
    .business-tab {
       padding: 30px;
+   }
+
+   .biz-pad {
+      padding: 0px !important;
    }
 }
 
