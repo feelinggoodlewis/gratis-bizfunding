@@ -514,11 +514,15 @@ h6 {
 }
 
 .bg-offwht {
-   background-color: #eee;
+   background-color: #eee !important;
 }
 
 .bg-wht {
    background-color: #fff;
+}
+
+.bg-drk-white {
+   background: #e9ecef !important;
 }
 
 
@@ -1732,6 +1736,18 @@ footer a {
 
    .form-tab {
       width: 100% !important
+   }
+
+   .biz-pad {
+      padding: 10px;
+   }
+
+   .biz-pad form div {
+      flex-direction: column;
+   }
+
+   .biz-pad form .form-control {
+      width: 100% !important;
    }
 }
 

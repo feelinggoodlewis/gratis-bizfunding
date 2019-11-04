@@ -199,14 +199,52 @@
                         get!</button>
                   </a>
             </p>
-            <section class="biz-section d-none">
-               <div class="business-tab" id="business-tab">
+            <section class="biz-section">
+               <div class="business-tab biz-pad" id="business-tab">
                   <div class="form-tab" style="width:100%">
                      <div class="form-cap" id="form-cap">
                         <p class="text-white">How Much Money Your Business Can Get?</p>
                      </div>
                      <form name="free_gsheet_1">
                         <p class="text-center error"></p>
+                        <p class="form-area">
+                           <h5 class="mt-1">HOW MUCH DO YOU NEED? (use the slider)</h5>
+                           <p class="slidecontainer" style="width: 100%; display: block;">
+                              <input type="range" min="10000" max="2000000" value="10000" step="100"
+                                 class="mslider bg-drk-white" id="myRange">
+                              <!-- <p>Value: <span id="demo"></span></p> -->
+                           </p>
+                           <div class="mt-1">
+                              <input class="form-control" placeholder="$10,000" id="slider_output" disabled />
+                              <input type="hidden" class="form-control" name="to_be_finance" />
+                              <select class="form-control" name="intended_use" id="int_use">
+                                 <option value="">Select Use Case</option>
+                                 <option>
+                                    I want to buy new or used business equipment
+                                 </option>
+                                 <option>
+                                    I want to Refinance debt
+                                 </option>
+                                 <option>
+                                    I want to buy invertory sales
+                                 </option>
+                                 <option>
+                                    I want to hire new employess
+                                 </option>
+                                 <option>
+                                    I need money for business taxes
+                                 </option>
+                                 <option>
+                                    I want to create a bridge loan for a construction project
+                                 </option>
+                                 <option>
+                                    I have another business expense
+                                 </option>
+                                 <option>Others</option>
+
+                              </select>
+                           </div>
+                        </p>
                         <div>
                            <select class="form-control" id="annual_revenue" name="annual_salary">
                               <option value="">
@@ -275,7 +313,7 @@
                               </option>
                            </select>
                            <input class="form-control" type="text" name="first_name" id="first_name"
-                              placeholder="First Name" autocomplete="given-name" />
+                              placeholder="First Name" autocomplete="given-name" minlength="2" />
                         </div>
                         <div>
                            <input class="form-control" type="text" name="last_name" id="last_name"
@@ -285,8 +323,8 @@
                         </div>
                         <div>
                            <input class="form-control" type="text" name="company_name" id="company_name"
-                              autocomplete="work" placeholder="Company Name" />
-                           <input class="form-control" type="tel" maxlength="10" minlength="10" name="phone" id="phone"
+                              autocomplete="work" placeholder="Company Name" minlength="2" />
+                           <input class="form-control" type="tel" maxlength="11" minlength="11" name="phone" id="phone"
                               autocomplete="mobile" placeholder="Phone" />
                            <input type="hidden" name="ip_address">
                         </div>

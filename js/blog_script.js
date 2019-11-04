@@ -15,6 +15,7 @@ $(document).ready(() => {
       var email = $('#email').val()
       var companyName = $('#company_name').val()
       var mobile = $('#phone').val()
+      var intendedUse = $('#int_use').val()
       var checkbox = $('#gsheet1_checkbox').prop('checked')
 
       if (annualRef === '') {
@@ -38,11 +39,20 @@ $(document).ready(() => {
       if (!/^[a-z]+$/i.test(lastName.trim())) {
          return displayError('Last Name requires text only')
       }
+      if (firstName.trim().length < 2 || lastName.trim().length < 2) {
+         return displayError('Invalid Name')
+      }
       if (email === '') {
          return displayError('Email is required');
       }
+      if (intendedUse === '') {
+         return displayError('Use Case not selected')
+      }
       if (companyName === '') {
          return displayError('Company is required');
+      }
+      if (companyName.length < 4) {
+         return displayError('Correct Company name is required')
       }
       if (mobile === '') {
          return displayError('Mobile number is required');
@@ -55,6 +65,9 @@ $(document).ready(() => {
       }
       if (!email.includes('.')) {
          return displayError('Invalid Email');
+      }
+      if (!email.match(/[a-zA-Z0-9_\.\-]+\@\w+\.[a-z]{2,}\.?[a-z]{0,}?$/)) {
+         return displayError('Invalid email entered')
       }
       if (!checkbox) {
          return displayError('You have to accept the terms and conditions');
@@ -84,6 +97,33 @@ $(document).ready(() => {
       $('.btn-danger').addClass('d-none')
       $('html, body').animate({ scrollTop: $('.biz-section').offset().top - 100 }, 400)
    })
+
+
+   var slider = document.getElementById("myRange");
+   var output = document.getElementById("slider_output");
+   var outputReal = $('input[name="to_be_finance"');
+   var value1 = null
+   output.value = `$${slider.value}`;
+   outputReal.val(`$${slider.value}`)
+
+   slider.oninput = function () {
+      // console.log(this.value)
+      switch (this.value.length) {
+         case 5:
+            value1 = this.value.substr(0, 2) + "," + this.value.substr(2)
+            break;
+         case 6:
+            value1 = this.value.substr(0, 3) + "," + this.value.substr(3)
+            break;
+         case 7:
+            value1 = this.value.substr(0, 1) + "," + this.value.substr(1, 3) + "," + this.value.substr(4)
+            break;
+         default:
+            value1 = this.value
+      }
+      output.value = `$${value1}`;
+      outputReal.val(`$${value1}`)
+   }
 
    const appreciate = `
 <div class="text-center" id="thanks_for" style="margin-top:80px">
